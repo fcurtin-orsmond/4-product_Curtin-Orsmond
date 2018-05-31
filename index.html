@@ -6,22 +6,206 @@
         <!-- character encoding -->
         <meta charset="UTF-8">
         <!-- title tag -->
-        <title>Product/Company Page Project</title>
+        <title>Product/Company Page Project - Faolan Curtin-Orsmond</title>
         <!-- mobile-friendly viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- W3.CSS stylesheet -->
         <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
         <!-- custom style -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Syncopate:700" rel="stylesheet">
     </head>
 
     <body>
-        
-        <h1>Hello World</h1>
-        
-        <p>Hey there, just testing out github and netlify</p>
 
-        
+        <!-- top nav, desktop and tablet -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme">
+                <a href="#home" class="w3-bar-item w3-button">South of the Border</a>
+                <a href="#About" class="w3-bar-item w3-button w3-hide-small">About</a>
+                <a href="#History" class="w3-bar-item w3-button w3-hide-small">History</a>
+                <a href="#Services" class="w3-bar-item w3-button w3-hide-small">Services</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+            </div>
+            <div id="mobileNav" class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large w3-hide-medium">
+                <a href="#About" class="w3-bar-item w3-button">About</a>
+                <a href="#History" class="w3-bar-item w3-button">History</a>
+                <a href="#Services" class="w3-bar-item w3-button">Services</a>
+            </div>
+        </div>
+        <!-- top nav, mobile -->
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+                <img src="images/Logo.jpg">
+            </div>
+        </div>
+
+        <!-- Container (About Section) -->
+        <div class="w3-padding-64" id="About">
+
+            <div class="w3-row w3-container">
+                <h1>About</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-book"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3>Accomidations</h3>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3>Staff</h3>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-phone-square"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3>Contact</h3>  
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <p>For all this information, call us at 800-845-6011 or come visit us in person! 3346 Highway 301 North
+Hamer, SC  29547 off interstate 95-U.S.</p>
+        </div>
+
+        <!-- Second Parallax Image with Logo Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+
+        <!-- Container (History Section) -->
+        <section class="w3-padding-64" id="History">
+
+            <div class="w3-row w3-container">
+                <h1>History</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <img src="images/Sign.JPG" class="w3-image" alt="Sign">
+                    </div>
+                </div>
+                <div class="w3-half">
+
+                    <button onclick="accordion('Founding')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        Founding</button>
+
+                    <div id="Founding" class="w3-container w3-hide">
+                        <p>In 1949, South of the Border Beer Depot was founded by Alan Schafer</p>
+                    </div>
+
+                    <button onclick="accordion('Hotel')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        Hotel</button>
+
+                    <div id="Hotel" class="w3-container w3-hide">
+                        <p>In 1954, 20 Hotel rooms were added</p>
+                    </div>
+
+                    <button onclick="accordion('Pedro')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        Pedro</button>
+
+                    <div id="Pedro" class="w3-container w3-hide">
+                        <p>The mascot, Pedro was inspired by one of Mr. Schafer's import contacts from Mexico</p>
+                    </div>
+
+                    <button onclick="accordion('Billboards')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        Billboards</button>
+
+                    <div id="Billboards" class="w3-container w3-hide">
+                        <p>The 175 Billboards were added soon after, all designed by Mr. Schafer himself</p>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- Second Parallax Image with Logo Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+
+        <!-- Container (Services Section) -->
+        <section class="w3-padding-64" id="Services">
+
+            <div class="w3-row w3-container">
+                <h1>Services</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <img src="images/Hotel.jpg" class="w3-image" alt="Hotel">
+                    </div>
+                </div>
+                <div class="w3-half">
+                    
+                    <!-- Services tabs menu -->
+                    <div class="w3-bar w3-theme2">
+                        <button class="w3-bar-item w3-button" onclick="openTab('Hotel')">Hotel</button>
+                        <button class="w3-bar-item w3-button" onclick="openTab('Restaurant')">Restaurant</button>
+                        <button class="w3-bar-item w3-button" onclick="openTab('Theme Park')">Theme Park</button>
+                    </div>
+                    
+                    <!-- Services tab content -->
+
+                    <div id="Hotel" class="tab" style="display:none">
+                        <h2>Hotel</h2>
+                        <p>This is the Motor Hotel, where guests can stay while at the park.</p>
+                    </div>
+
+                    <div id="Restaurant" class="tab" style="display:none">
+                        <h2>Restaurant</h2>
+                        <p>The restaurant at South of the Border offers many classic and exotic options to keep you ready to have more fun at the park.</p> 
+                    </div>
+
+                    <div id="Theme Park" class="tab" style="display:none">
+                        <h2>Theme Park</h2>
+                        <p>The biggest attraction of South of the Border, our world famous theme park, with many rides and activities for guests of all ages.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Javascript -->
+
+        <script src="js/topNav.js"></script>
+        <script src="js/accordion.js"></script>
+        <script src="js/tabs.js"></script>
+
     </body>
 
 </html>
